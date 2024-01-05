@@ -55,8 +55,7 @@ ROOT_URLCONF = 'btre_project.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'templates']
-        ,
+        'DIRS': [BASE_DIR / 'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -117,7 +116,16 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
+# Set the absolute path for the directory where collected static files will be stored.
+STATIC_ROOT = BASE_DIR / 'static'
+
+# Define the base URL for serving static files during development.
 STATIC_URL = 'static/'
+
+# Specify additional directories where static files will be collected from during the "collectstatic" command.
+STATICFILES_DIRS = [
+    BASE_DIR / 'btre_project/static'
+]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
