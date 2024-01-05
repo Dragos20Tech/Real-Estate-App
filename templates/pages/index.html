@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+<!-- This line specifies that the current template extends or inherits from another template called 'base.html'. -->
+
+{% block content %}
+<!-- This line begins a block named 'content' within the current template. -->
+    <h1>Home</h1>
+    <!-- This line includes HTML content within the 'content' block. -->
+    <!-- In this case, it's a level 1 heading (<h1>) displaying the text "Home". -->
+    <!-- The actual content within this block can be overridden in templates that extend this one. -->
+{% endblock %}
+<!-- This line marks the end of the 'content' block. -->
+<!-- Everything between { block content } and { endblock } is the content of the 'content' block. -->
+<!-- This content can be replaced or extended by child templates that extend this template. -->

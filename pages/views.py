@@ -1,7 +1,13 @@
 from django.shortcuts import render
-from django.http import HttpResponse
 
+
+# Django's views are Python functions that takes http requests and returns http response, like HTML documents.
+# A web page that uses Django is full of views with different tasks and missions.
 
 # Create your views here.
 def index(request):
-    return HttpResponse('<h1>Hello World</h1>')
+    return render(request, 'pages/index.html')
+
+
+def about(request):
+    return render(request, 'pages/about.html')
