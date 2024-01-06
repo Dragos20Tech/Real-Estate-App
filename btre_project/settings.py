@@ -32,6 +32,8 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'pages.apps.PagesConfig',
+    'listings.apps.ListingsConfig',  # added the ListingsConfig class from the listings app to the INSTALLED_APPS.
+    'realtors.apps.RealtorsConfig',  # included the realtors app to my project. [TRANSLATION for the above line]
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
