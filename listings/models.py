@@ -22,7 +22,7 @@ class Listing(models.Model):  # inherit from models.Model
     sqft = models.IntegerField()
     lot_size = models.DecimalField(max_digits=5, decimal_places=1)  # 1000.0 or 2000.0
     photo_main = models.ImageField(upload_to='photos/%Y/%m/%d/')
-    photo_1 = models.ImageField(upload_to='photos/%Y/%m/%d/', blank=True)
+    photo_1 = models.ImageField(upload_to='photos/%Y/%m/%d/', blank=True)  # photos/2018/01/01 example (date structure)
     photo_2 = models.ImageField(upload_to='photos/%Y/%m/%d/', blank=True)
     photo_3 = models.ImageField(upload_to='photos/%Y/%m/%d/', blank=True)
     photo_4 = models.ImageField(upload_to='photos/%Y/%m/%d/', blank=True)
