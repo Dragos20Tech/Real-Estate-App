@@ -1,0 +1,41 @@
+#header {
+    height: 50px;
+    background: #10284e;
+    color: #fff;
+}
+
+#user-tools{
+    font-weight: bold;
+}
+
+#branding h1{
+    color: #fff;
+    font-weight: 500;
+    padding-top: 15px;
+}
+
+a:link,
+a:visited {
+    color: #10284e;
+}
+
+div.breadcrumbs {
+    background: #30caa0;
+    color: #10284e;
+    font-weight: bold;
+}
+
+.module caption, .inline-group h2 {
+    background: #30caa0;
+}
+
+input[type="submit"] {
+    background: #10284e;
+    color: #fff;
+    font-weight: bold;
+}
+
+input[type="submit"].default {
+    background: #10284e;
+    font-weight: bold;
+}
