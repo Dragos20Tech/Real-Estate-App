@@ -38,6 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.humanize'  # A set of Django template filters useful for adding a “human touch” to data.
+    # Doc link : https://docs.djangoproject.com/en/5.0/ref/contrib/humanize/
 ]
 
 MIDDLEWARE = [
