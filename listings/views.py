@@ -1,3 +1,4 @@
+from django.core.paginator import EmptyPage, PageNotAnInteger, Paginator
 from django.shortcuts import render
 from .models import Listing
 
@@ -5,8 +6,13 @@ from .models import Listing
 # Create your views here.
 
 def index(request):
+
+    paginator = Paginator(Listing.objects.order_by('-list_date').filter(is_published=True), 6)
+    page = request.GET.get('page')  # URL parameter
+    paged_listings = paginator.get_page(page)  # returns a page object
+
     context = {
-        'listings': Listing.objects.all()  # this will return all the listings
+        'listings': paged_listings
     }
     return render(request, 'listings/listings.html', context)
 
