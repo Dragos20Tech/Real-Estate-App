@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from listings.models import Listing
 from realtors.models import Realtor
+from listings.choices import state_choices, price_choices, bedroom_choices
 
 
 # Django's views are Python functions that takes http requests and returns http response, like HTML documents.
@@ -14,7 +15,10 @@ def index(request):
     listings = Listing.objects.order_by('-list_date').filter(is_published=True)[:3]
 
     context = {
-        'listings': listings
+        'listings': listings,
+        'bedroom_choices': bedroom_choices,
+        'price_choices': price_choices,
+        'state_choices': state_choices
     }
 
     return render(request, 'pages/index.html', context)
