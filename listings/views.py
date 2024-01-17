@@ -69,7 +69,10 @@ def search(request):
         'bedroom_choices': bedroom_choices,
         'price_choices': price_choices,
         'state_choices': state_choices,
-        'listings': queryset_list
+        'listings': queryset_list,
+        'values': request.GET
+        # The values dictionary is used to pre-fill the form fields with the submitted values. This provides a
+        # better user experience because users can see their previous selections when they revisit the page.
     }
 
     return render(request, 'listings/search.html', context)
