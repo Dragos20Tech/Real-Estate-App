@@ -2,6 +2,8 @@
 {% load humanize %}
 <!-- This line specifies that the current template extends or inherits from another template called 'base.html'. -->
 
+{% block title %} | Home {% endblock %}
+
 {% block content %}
     <!-- Alerts -->
     {% include 'partials/_alert.html' %}
