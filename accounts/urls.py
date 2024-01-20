@@ -9,3 +9,7 @@ urlpatterns = [
     path('logout', views.logout, name='logout'),
     path('dashboard', views.dashboard, name='dashboard'),
 ]
+
+# Each 'path' function within the list represents a URL pattern that the Django application can handle.
+# The arguments to the path function include the URL pattern as a string and the corresponding view function
+# that should be called when that URL is accessed.

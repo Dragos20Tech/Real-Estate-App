@@ -12,6 +12,8 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 
 from pathlib import Path
 
+from django.contrib.messages import constants as messages
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -37,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
-    'django.contrib.messages',
+    'django.contrib.messages',  # Doc link : https://docs.djangoproject.com/en/5.0/ref/contrib/messages/
     'django.contrib.staticfiles',
     'django.contrib.humanize'  # A set of Django template filters useful for adding a “human touch” to data.
     # Doc link : https://docs.djangoproject.com/en/5.0/ref/contrib/humanize/
@@ -137,3 +139,8 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # Media Folder Settings
 MEDIA_ROOT = BASE_DIR / 'media'  # Set the absolute path for the directory where uploaded media files will be stored.
 MEDIA_URL = '/media/'  # Define the base URL for serving media files during development.
+
+# Messages Tags (django.contrib.messages)
+MESSAGE_TAGS = {
+    messages.ERROR: 'danger'
+}
