@@ -22,5 +22,6 @@ from django.conf import settings
 urlpatterns = [
     path('', include('pages.urls')),  # Homepage
     path('listings/', include('listings.urls')),  # Listings
+    path('accounts/', include('accounts.urls')),  # Accounts
     path('admin/', admin.site.urls),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)  # Serve media files during development
