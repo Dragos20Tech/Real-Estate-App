@@ -145,3 +145,10 @@ MEDIA_URL = '/media/'  # Define the base URL for serving media files during deve
 MESSAGE_TAGS = {
     messages.ERROR: 'danger'
 }
+
+# Email config
+# EMAIL_HOST = 'smtp.gmail.com'
+# EMAIL_PORT = 587
+# EMAIL_HOST_USER = 'dragospetrescu5@gmail.com'
+# EMAIL_HOST_PASSWORD = 'Rosianu12345'
+# EMAIL_USE_TLS = True
