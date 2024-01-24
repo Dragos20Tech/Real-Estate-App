@@ -4,6 +4,7 @@ from django.contrib import messages, auth
 
 from contacts.models import Contact
 
+
 # Create your views here.
 
 def register(request):
@@ -63,6 +64,7 @@ def login(request):
 
 
 def dashboard(request):
+    # Retrieving contacts of the current user (The logged-in user)
     user_contacts = Contact.objects.order_by('-contact_date').filter(user_id=request.user.id)
     context = {
         'contacts': user_contacts
