@@ -1,6 +1,6 @@
 # Real Estate Website
 
-A website I built following instructions from [Brad's Django Dev to Deployment course](https://www.udemy.com/course/python-django-dev-to-deployment/). The frontend of the website was not built by me, 
+A website I built following instructions from [Brad's Django Dev to Deployment course](https://www.udemy.com/course/python-django-dev-to-deployment/). The frontend of the website was NOT built by me, 
 I just modified it here and there where I thought it was necessary. Building this website gave me an idea of how much I still need to learn to get better and build my own Django applications. I have to say 
 that I have familiarized myself with concepts such as : MVC (Model-View-Controller), URL Mapping, ORM (Object-Relational Mapping), CSRF (Cross-Site Request Forgery) and
 others that I have never heard of before.
